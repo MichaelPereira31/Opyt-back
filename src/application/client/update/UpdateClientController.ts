@@ -9,7 +9,7 @@ import { ZodValidationAdapter } from 'src/infra/adpaters/ZodValidationAdapter';
 @ApiTags('Client')
 @Controller('client')
 export class UpdateClientController {
-  constructor(private readonly updateClientUseCase: UpdateClientUseCase) { }
+  constructor(private readonly updateClientUseCase: UpdateClientUseCase) {}
 
   @Put(':id')
   @ApiParam({ name: 'id', type: String })

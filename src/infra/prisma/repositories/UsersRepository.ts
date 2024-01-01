@@ -14,9 +14,9 @@ export class ClientRepository extends BaseRepository<
     super(prisma.client);
   }
 
-  async findByEmail(id: string): Promise<Client> {
+  async findByEmail(email: string): Promise<Client> {
     return await this.prisma.client.findUnique({
-      where: { id },
+      where: { email },
     });
   }
 }

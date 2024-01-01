@@ -18,7 +18,9 @@ export class CreateClientUseCase implements CreateClient {
     const ClientAlreadyExists = await this.clientService.findByEmail(email);
 
     if (ClientAlreadyExists) {
-      throw new ConflictException('Client already exists');
+      throw new ConflictException(
+        'O e-mail fornecido já está registrado para outro contato. Por favor, use um e-mail diferente.',
+      );
     }
 
     const client = await this.clientService.create({

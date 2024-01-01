@@ -1,6 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 
-import { ClientRepository } from 'src/infra/prisma/repositories/UsersRepository';
+import { ClientRepository } from 'src/infra/prisma/repositories/ClientRepository';
 import { Client } from 'src/domain/client/models/Client';
 import {
   UpdateClient,
@@ -9,7 +9,7 @@ import {
 
 @Injectable()
 export class UpdateClientUseCase implements UpdateClient {
-  constructor(private readonly clientRepository: ClientRepository) {}
+  constructor(private readonly clientRepository: ClientRepository) { }
 
   async execute(
     id: string,

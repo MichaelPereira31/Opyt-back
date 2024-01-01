@@ -10,7 +10,7 @@ import { FindByIdClientController } from 'src/application/client/findById/FindBy
 import { FindByIdClientUseCase } from 'src/application/client/findById/FindByIdClientUseCase';
 import { UpdateClientController } from 'src/application/client/update/UpdateClientController';
 import { UpdateClientUseCase } from 'src/application/client/update/UpdateClientUseCase';
-import { ClientRepository } from '../prisma/repositories/UsersRepository';
+import { ClientRepository } from '../prisma/repositories/ClientRepository';
 
 @Module({
   imports: [PrismaModule],
@@ -30,4 +30,4 @@ import { ClientRepository } from '../prisma/repositories/UsersRepository';
     FindAllClientsUseCase,
   ],
 })
-export class ClientModule {}
+export class ClientModule { }

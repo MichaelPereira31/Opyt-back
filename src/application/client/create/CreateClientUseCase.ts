@@ -4,11 +4,11 @@ import {
   CreateClient,
   CreateClientParams,
 } from 'src/domain/client/usecases/CreateClient';
-import { ClientRepository } from 'src/infra/prisma/repositories/UsersRepository';
+import { ClientRepository } from 'src/infra/prisma/repositories/ClientRepository';
 
 @Injectable()
 export class CreateClientUseCase implements CreateClient {
-  constructor(private readonly clientService: ClientRepository) {}
+  constructor(private readonly clientService: ClientRepository) { }
   async execute({
     email,
     city,

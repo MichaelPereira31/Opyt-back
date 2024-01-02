@@ -26,42 +26,47 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Installation
+<h3>Prerequisites</h3>
+<ul>
+  <li>Docker</li>
+  <li>Docker Compose</li>
+  <li>Steps to Run</li>
+</ul>
+<hr>
+<h3>Methodologies</h3>
 
-```bash
-$ yarn install
-```
+- **Continuous Integration**
+- **Continuous Delivery**
+- **Conventional Commits**
+- **Clean Architecture**
+- **Dependency Diagrams**
+- **Git Flow**
+- **Use Cases**
+  <hr>
+<h3>Developed with:</h3>
 
-## Running the app
 
-```bash
-# development
-$ yarn run start
+* [TypeScript](https://www.typescriptlang.org)
+* [Eslint](https://eslint.org)
+* [Prettier](https://prettier.io/)
+* [Lint-staged](https://github.com/okonet/lint-staged)
+* [Validator](https://www.npmjs.com/package/yup)
+* [NestJS](https://nestjs.com/)
+* [Prisma](https://www.prisma.io)
+* [Docker](https://www.docker.com)
+* [MySQL](https://www.mysql.com/)
+<hr>
 
-# watch mode
-$ yarn run start:dev
+<h1 align="center">Steps to Execute</h1>
+<h4>Clone the Repository</h4>
+    
+ > git clone https://github.com/MichaelPereira31/Opyt-back.git
+<h4>Configure Environment Variables</h4>
+ - Copy the .env.example file to .env and add the necessary configurations.
 
-# production mode
-$ yarn run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ yarn run test
-
-# e2e tests
-$ yarn run test:e2e
-
-# test coverage
-$ yarn run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
+<h4>Run Docker Compose</h4>
+ > docker-compose up --build # or docker compose up --build
+ 
 ## Stay in touch
 
 - Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)

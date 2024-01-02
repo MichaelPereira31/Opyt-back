@@ -7,18 +7,19 @@ services:
     env_file: ./.env
     environment:
         - MYSQL_ROOT_PASSWORD=root
-        - MYSQL_DATABASE=root
+        - MYSQL_DATABASE=opyt
+        - MYSQL_PASSWORD=root
     ports:
       - 3306:3306
     healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      # test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       timeout: 5s
       retries: 10
 
   app:
     build: .
     ports:
-      - 3000:3000
+      - 3333:3333
     volumes:
       - .:/usr/app
     depends_on:
